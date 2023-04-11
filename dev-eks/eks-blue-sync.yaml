@@ -1,0 +1,4 @@
+proton: ServiceSpec
+instances:
+  - name: blue
+    environment: dev-eks
