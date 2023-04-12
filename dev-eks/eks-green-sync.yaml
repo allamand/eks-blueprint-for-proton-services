@@ -1,0 +1,26 @@
+proton: ServiceSpec
+instances:
+  - name: green
+    environment: dev-eks
+    spec:
+      iam_platform_user: cdkmb3
+      eks_admin_role_name: demo3
+      addon_repo_url: 'git@github.com:aws-samples/eks-blueprints-add-ons.git'
+      workload_repo_url: 'git@github.com:seb-demo/eks-blueprints-workloads.git'
+      workload_repo_revision: working_eks_blue
+      workload_repo_path: envs/dev
+      workload_repo_secret: github-blueprint-ssh-key
+      argocd_route53_weight: '100'
+      ecsfrontend_route53_weight: '100'
+      route53_weight: '100'
+      kubernetes_version: '1.25'
+      cloudwatch_metrics: true
+      argo_rollouts: true
+      external_dns: true
+      vpa: true
+      aws_for_fluentbit: true
+      aws_load_balancer_controller: true
+      kubecost: true
+      karpenter: true
+      cert_manager: true
+      metrics_server: true
