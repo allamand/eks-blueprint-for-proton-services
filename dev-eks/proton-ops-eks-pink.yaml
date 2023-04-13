@@ -1,6 +1,6 @@
 sync:
   services:
-    dev-eks-blue:
+    dev-eks-pink:
       blue:
         branch: main
         spec: dev-eks/eks-pink-sync.yaml
