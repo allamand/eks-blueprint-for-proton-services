@@ -10,7 +10,7 @@ instances:
       workload_repo_revision: working_eks_blue
       workload_repo_path: envs/dev
       workload_repo_secret: github-blueprint-ssh-key
-      argocd_route53_weight: '100'
+      argocd_route53_weight: '10'
       ecsfrontend_route53_weight: '100'
       route53_weight: '100'
       kubernetes_version: '1.25'
